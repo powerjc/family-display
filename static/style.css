@@ -114,6 +114,54 @@ body {
     color: #666;
 }
 
+/* 3-Day Forecast */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.forecast-day {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.forecast-day .day-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.forecast-day .temps {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.forecast-day .high {
+    color: #fff;
+}
+
+.forecast-day .low {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+.forecast-day .precip {
+    font-size: 14px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.forecast-day .condition {
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
 /* Lunch Menu */
 .menu-list ul {
     list-style: none;

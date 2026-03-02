@@ -34,6 +34,9 @@ async function updateDisplay() {
         // Update weather
         updateWeather(data.weather);
 
+        // Update forecast
+        updateForecast(data.forecast);
+
         // Update today's schedule
         updateSchedule(data.schedule);
 
@@ -66,6 +69,26 @@ function updateWeather(weather) {
         <span class="temp">${weather.temp}°</span>
         <span class="condition">${weather.condition}</span>
     `;
+}
+
+function updateForecast(forecast) {
+    const container = document.getElementById('forecast');
+
+    if (!forecast || forecast.length === 0) {
+        container.innerHTML = '<p class="empty">Forecast not available</p>';
+        return;
+    }
+
+    container.innerHTML = forecast.map(day => `
+        <div class="forecast-day">
+            <div class="day-name">${day.day}</div>
+            <div class="condition">${day.condition}</div>
+            <div class="temps">
+                <span class="high">${day.high}°</span> / <span class="low">${day.low}°</span>
+            </div>
+            ${day.precip ? `<div class="precip">💧 ${day.precip}</div>` : ''}
+        </div>
+    `).join('');
 }
 
 function updateSchedule(schedule) {
