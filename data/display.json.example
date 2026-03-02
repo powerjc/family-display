@@ -1,0 +1,62 @@
+{
+  "last_update": "2026-03-01T12:00:00",
+  "weather": {
+    "temp": 72,
+    "condition": "Sunny"
+  },
+  "schedule": [
+    {
+      "time": "8:00 AM",
+      "title": "Morning Meeting",
+      "person": "Parent"
+    },
+    {
+      "time": "School Day",
+      "title": "Elementary School",
+      "person": "Child 1"
+    },
+    {
+      "time": "School Day",
+      "title": "Middle School",
+      "person": "Child 2"
+    }
+  ],
+  "lunch": {
+    "items": [
+      "Chicken Nuggets",
+      "Mac & Cheese",
+      "Green Beans",
+      "Apple Slices",
+      "Milk"
+    ],
+    "note": "School lunch menu for today"
+  },
+  "reminders": [
+    {
+      "text": "Doctor appointment tomorrow at 3pm",
+      "priority": "high"
+    },
+    {
+      "text": "Soccer practice Thursday 5:30pm",
+      "priority": "normal"
+    },
+    {
+      "text": "Library books due Friday",
+      "priority": "normal"
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "Friday, Mar 5",
+      "title": "Parent-Teacher Conference"
+    },
+    {
+      "date": "Saturday, Mar 6",
+      "title": "Birthday Party - Friend's House"
+    },
+    {
+      "date": "Monday, Mar 8",
+      "title": "School Field Trip"
+    }
+  ]
+}

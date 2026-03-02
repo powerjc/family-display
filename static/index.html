@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Command Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with date/time -->
+        <header class="header">
+            <div class="date-time">
+                <div class="date" id="current-date">Loading...</div>
+                <div class="time" id="current-time">--:--</div>
+            </div>
+            <div class="weather" id="weather">
+                <span class="temp">--°</span>
+                <span class="condition">--</span>
+            </div>
+        </header>
+
+        <!-- Main content area -->
+        <main class="main-content">
+            <!-- Today's Schedule -->
+            <section class="card schedule-card">
+                <h2>Today's Schedule</h2>
+                <div id="today-schedule" class="schedule-list">
+                    <p class="loading">Loading schedule...</p>
+                </div>
+            </section>
+
+            <!-- Lunch Menu -->
+            <section class="card menu-card">
+                <h2>Today's Lunch</h2>
+                <div id="lunch-menu" class="menu-list">
+                    <p class="loading">Loading menu...</p>
+                </div>
+            </section>
+
+            <!-- Important Reminders -->
+            <section class="card reminders-card">
+                <h2>Reminders</h2>
+                <div id="reminders" class="reminder-list">
+                    <p class="loading">Loading reminders...</p>
+                </div>
+            </section>
+
+            <!-- Upcoming This Week -->
+            <section class="card upcoming-card">
+                <h2>This Week</h2>
+                <div id="upcoming" class="upcoming-list">
+                    <p class="loading">Loading events...</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="update-time">Last updated: <span id="last-update">--</span></div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

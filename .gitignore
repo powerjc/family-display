@@ -1,0 +1,32 @@
+# Environment variables
+.env
+
+# Data files (contains personal content)
+data/display.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Internal planning/prompt documents (not for public repo)
+ANSIBLE_DEPLOY_PROMPT.md
+GITHUB_SETUP_PROMPT.md
+DOCKER_DEPLOY.md

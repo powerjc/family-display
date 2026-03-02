@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  family-display:
+    build: .
+    container_name: family-display
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount data directory so content can be updated from outside
+      - ./data:/app/data
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - TZ=America/Chicago
