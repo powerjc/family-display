@@ -200,24 +200,32 @@ body {
     color: #333;
 }
 
-/* Upcoming Events */
-.upcoming-list .event {
-    padding: 12px 15px;
-    margin-bottom: 10px;
-    background: #f8f9fa;
-    border-radius: 8px;
+/* Upcoming Events - Grouped by Day */
+.upcoming-list .day-group {
+    margin-bottom: 20px;
 }
 
-.event .date {
-    font-size: 14px;
-    font-weight: 600;
-    color: #764ba2;
-    margin-bottom: 3px;
-}
-
-.event .title {
+.day-group .day-header {
     font-size: 16px;
+    font-weight: 700;
+    color: #764ba2;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #764ba2;
+}
+
+.day-group .day-events {
+    padding-left: 10px;
+}
+
+.day-events .event-item {
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 15px;
     color: #333;
+    border-left: 3px solid #764ba2;
 }
 
 /* Loading/Empty States */

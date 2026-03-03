@@ -150,10 +150,24 @@ function updateUpcoming(upcoming) {
         return;
     }
 
-    container.innerHTML = upcoming.map(item => `
-        <div class="event">
-            <div class="date">${item.date}</div>
-            <div class="title">${item.title}</div>
+    // Group events by date
+    const grouped = {};
+    upcoming.forEach(item => {
+        if (!grouped[item.date]) {
+            grouped[item.date] = [];
+        }
+        grouped[item.date].push(item);
+    });
+
+    // Build HTML with grouped events
+    container.innerHTML = Object.entries(grouped).map(([date, events]) => `
+        <div class="day-group">
+            <div class="day-header">${date}</div>
+            <div class="day-events">
+                ${events.map(event => `
+                    <div class="event-item">${event.title}</div>
+                `).join('')}
+            </div>
         </div>
     `).join('');
 }
