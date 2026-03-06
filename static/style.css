@@ -62,10 +62,10 @@ body {
     margin-top: 3px;
 }
 
-/* Main Content Grid - 2 columns */
+/* Main Content Grid - 3 columns */
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
     margin-bottom: 12px;
 }
@@ -292,7 +292,7 @@ body {
 /* Responsive */
 @media (max-width: 900px) {
     .main-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .week-grid {
         grid-template-columns: repeat(4, 1fr);
