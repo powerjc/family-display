@@ -9,6 +9,8 @@ services:
     volumes:
       # Mount data directory so content can be updated from outside
       - ./data:/app/data
+      # Mount static files so frontend changes don't require a rebuild
+      - ./static:/app/static
     restart: unless-stopped
     env_file:
       - .env

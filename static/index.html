@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header with date/time -->
+        <!-- Header with date/time/weather/forecast -->
         <header class="header">
             <div class="date-time">
                 <div class="date" id="current-date">Loading...</div>
@@ -18,35 +18,23 @@
                 <span class="temp">--°</span>
                 <span class="condition">--</span>
             </div>
+            <div id="forecast" class="forecast-inline"></div>
         </header>
 
-        <!-- Main content area -->
+        <!-- Main content: 2-column grid -->
         <main class="main-content">
-            <!-- 3-Day Forecast -->
-            <section class="card forecast-card">
-                <h2>3-Day Forecast</h2>
-                <div id="forecast" class="forecast-grid">
-                    <p class="loading">Loading forecast...</p>
-                </div>
-            </section>
-
-            <!-- Today's Schedule -->
+            <!-- Left: Today's Schedule -->
             <section class="card schedule-card">
-                <h2>Today's Schedule</h2>
+                <h2>Today</h2>
                 <div id="today-schedule" class="schedule-list">
                     <p class="loading">Loading schedule...</p>
                 </div>
-            </section>
-
-            <!-- Lunch Menu -->
-            <section class="card menu-card">
-                <h2>Today's Lunch</h2>
-                <div id="lunch-menu" class="menu-list">
-                    <p class="loading">Loading menu...</p>
+                <div id="lunch-menu" class="menu-list" style="margin-top: 12px;">
+                    <p class="loading">Loading lunch...</p>
                 </div>
             </section>
 
-            <!-- Important Reminders -->
+            <!-- Right: Reminders -->
             <section class="card reminders-card">
                 <h2>Reminders</h2>
                 <div id="reminders" class="reminder-list">
@@ -54,18 +42,18 @@
                 </div>
             </section>
 
-            <!-- Upcoming This Week -->
-            <section class="card upcoming-card">
+            <!-- Full-width: Week Calendar -->
+            <section class="card week-card">
                 <h2>This Week</h2>
-                <div id="upcoming" class="upcoming-list">
-                    <p class="loading">Loading events...</p>
+                <div id="upcoming" class="week-grid">
+                    <p class="loading">Loading week...</p>
                 </div>
             </section>
         </main>
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="update-time">Last updated: <span id="last-update">--</span></div>
+            Last updated: <span id="last-update">--</span>
         </footer>
     </div>
 
