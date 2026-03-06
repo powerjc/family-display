@@ -239,6 +239,7 @@ body {
     display: flex;
     gap: 16px;
     align-items: center;
+    margin-left: 32px;
 }
 
 .forecast-day-inline {
